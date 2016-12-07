@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.col-1-2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    padding: 2em;
+}
+
+#map {
+    float: left;
+    background-color: #216d6f;
+}
+
+.current-map {
+    max-width: 100%;
+}
+
+#decision {
+    background-color: #572061;
+}
+
+.content-wrapper {
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    font-family: 'Raleway';
+}
+
+p.reasoning-entry {
+    font-family: 'Raleway';
+    color: white;
+    padding: 0.5em;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,.5);
+}
+
+.button-container {
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    box-shadow: 2px 2px 19px #131212;
+}
+
+.helpful-message {
+    font-family: 'Raleway', sans-serif;
+    padding: 1em;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.initialize-button {
+    font-size: 1.4em;
+    padding: 0.3em 2.7em;
+    border-radius: 70px;
+    background-color: #248224;
+    color: white;
+    border: 1px solid #248224;
+    font-weight: 100;
+    position: relative;
+    margin-left: 45px;
+    max-width: 200px;
+    cursor: pointer;
+}
