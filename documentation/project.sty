@@ -40,6 +40,8 @@
 \usepackage{float}
 \usepackage{courier}
 \usepackage[defaultmono]{droidmono}
+\usepackage{media9}
+\usepackage{background}
 %\renewcommand*\familydefault{\ttdefault}
 %Colors
 \definecolor{front}{RGB}{154,34,119}
@@ -112,8 +114,8 @@
 
 \newcommand{\marginfig}[2]{
   \marginpar{
-    \captionof{figure}{#2}
     \includegraphics[width=\marginparwidth]{#1} 
+    \captionof{figure}{#2}
   }
 }
 
@@ -128,8 +130,8 @@
       \begin{circuitikz}
         #1
       \end{circuitikz}
-      \captionof{figure}{}
       \end{center}
+      \captionof{figure}{}
       \end{circuitframe}
   }
 }
