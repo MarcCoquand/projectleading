@@ -54,7 +54,8 @@ function showReasoning(index) {
         var node = "<p class='reasoning-entry'>" + strings[index][i] + "</p>";
         container.innerHTML += node;
         i++;
-    }, 3500);
+    }, 1500);
+
 }
 
 
@@ -82,5 +83,6 @@ function showResult() {
     insertMap(index);
 
     var container = document.getElementById("decision-content-wrapper");
-    container.innerHTML = "<h1>Safest route!</h1>";
+    container.innerHTML = "<h1>This is what I consider the safest route</h1>"; 
+    container.innerHTML += "<p class='reasoning-entry'>It's the safest because your friend Simon is walking on the same road</p>";
 }
